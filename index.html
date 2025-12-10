@@ -3,51 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Routy - Sign-In</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
-<body class="display-flex">
-    <div id="left-side" class="background-image"></div>
-    <div id="right-side" class="background-color">
-        <div id="content" >
-            <img src="images/logo.png" class="logo-size" alt="Logo of Routy - two drawn pins with a dotted line connecting them">
-            <p class="heading">Optimize your sales routes, reduce costs and increase your visits today!</p>
+<body>
+    <div id="left-side">
+        <div id="odin">
+            <img src="images/odin-logo.png" alt="White drawing of Odin, the norse mythology god.">
+            
         </div>
-        <form id="create-account" action="" method="post">
-            <fieldset class="form-legend display-flex flex-wrap">
-                <legend>User Details</legend>
-
+        <p>Photo by <a href="https://unsplash.com/@haliewestphoto" rel="noopener noreferrer" target="_blank">Halie West</a> on <a href="https://unsplash.com/" rel="noopener noreferrer" target="_blank">Unsplash</a></p>
+    </div>
+    <div id="right-side">
+        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <span>now</span> to get started.</p>
+        <p>You <span>know</span> you want to.</p>
+        <form action="">
+            <fieldset>
+                <legend>Let's do this!</legend>
                 <label for="first_name">First Name
                     <input type="text" id="first_name" name="first_name">
                 </label>
-                
-
                 <label for="last_name">Last Name
-                    <input type="text" id ="last_name" name="last_name">
+                    <input type="text" name="last_name" id="last_name">
                 </label>
-                
-
                 <label for="email">Email
-                    <input type="email" id="email" name="email">
+                    <input type="email" name="email" id="email">
                 </label>
-                
-
                 <label for="phone_number">Phone Number
-                    <input type="tel" id="phone_number" name="phone_number">
+                    <input type="tel" name="phone_number" id="phone_number">
                 </label>
-                
-
                 <label for="password">Password
-                    <input type="password" id="password" name="password">
+                    <input type="password" name="password" id="password">
                 </label>
-                
-
                 <label for="confirm_password">Confirm Password
-                    <input type="password" id="confirm_password" name="confirm_password">
-                </label>            
+                    <input type="password" name="confirm_password" id="confirm_password">
+                </label>
             </fieldset>
-            <button type="submit" class="btn">Create Account</button>
+            <button type="submit">Create Account</button>
         </form>
+        <p>Already have an account? <a href="">Log in</a></p>
     </div>
 </body>
 </html>
