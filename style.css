@@ -1,5 +1,118 @@
-* {
+@font-face {
+    font-family: Inter;
+    src: url(Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+body.display-flex {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    display: flex;
+    height: 100vh;
+    font-family: Inter;
+}
+
+#left-side.background-image {
+    flex: 0.7;
+    background-image: url('images/background.jpg'); /* replace with your image */
+    background-size: cover;
+    background-position: 60%;
+    border-right: solid 18px #ff5d5d;
+    border-radius: 15px;
+}
+
+#right-side.background-color {
+    flex: 1;
+    background-color: #f7f9fc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+#content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-size {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.heading {
+    font-size: 1.2rem;
+    color: #333;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+form#create-account {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+fieldset.form-legend {
+    border: none;
+    padding: 0;
+    margin: 0 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+fieldset legend {
+    font-weight: bold;
+    margin-bottom: 15px;
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 10px); 
+    font-size: 0.9rem;
+    color: #444;
+}
+
+input {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccd2d8;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    transition: border-color 0.2s ease;
+}
+
+input:focus {
+    border-color: #ff5d5d;
+    outline: none;
+    box-shadow: 0 0 4px rgba(74, 125, 252, 0.3);
+}
+
+button.btn {
+    width: 100%;
+    padding: 12px;
+    background: #ff5d5d;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button.btn:hover {
+    background: #df4a4a;
+}
+
+#theme-changer {
+    position: fixed;
+    top: 0px;
+    right: 0px;
 }

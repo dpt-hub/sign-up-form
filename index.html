@@ -6,40 +6,47 @@
     <title>Routy - Sign-In</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div id="left-side"></div>
-    <div id="right-side">
-        <div id="content">
-            <img src="images/logo.png" alt="Logo of Routy - two drawn pins with a dotted line connecting them">
-            <p>Optimize your sales routes, reduce costs and increase your visits today!</p>
+<body class="display-flex">
+    <div id="left-side" class="background-image"></div>
+    <div id="right-side" class="background-color">
+        <div id="content" >
+            <img src="images/logo.png" class="logo-size" alt="Logo of Routy - two drawn pins with a dotted line connecting them">
+            <p class="heading">Optimize your sales routes, reduce costs and increase your visits today!</p>
         </div>
         <form id="create-account" action="" method="post">
-            <fieldset>
+            <fieldset class="form-legend display-flex flex-wrap">
                 <legend>User Details</legend>
 
-                <label for="first_name">First Name</label>
-                <input type="text" id="first_name" name="first_name">
+                <label for="first_name">First Name
+                    <input type="text" id="first_name" name="first_name">
+                </label>
+                
 
-                <label for="last_name">Last Name</label>
-                <input type="text" id ="last_name" name="last_name">
+                <label for="last_name">Last Name
+                    <input type="text" id ="last_name" name="last_name">
+                </label>
+                
 
-                <label for="email">Email </label>
-                <input type="email" id="email" name="email">
+                <label for="email">Email
+                    <input type="email" id="email" name="email">
+                </label>
+                
 
-                <label for="phone_number">Phone Number</label>
-                <input type="number" id="phone_number" name="phone_number">
+                <label for="phone_number">Phone Number
+                    <input type="tel" id="phone_number" name="phone_number">
+                </label>
+                
 
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password">
+                <label for="password">Password
+                    <input type="password" id="password" name="password">
+                </label>
+                
 
-                <label for="confirm_password">Confirm Password</label>
-                <input type="password" id="confirm_password" name="confirm_password">
-            
+                <label for="confirm_password">Confirm Password
+                    <input type="password" id="confirm_password" name="confirm_password">
+                </label>            
             </fieldset>
-            <button type="submit">Create Account</button>
         </form>
     </div>
-
-    <script src="index.js"></script>
 </body>
 </html>
