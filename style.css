@@ -107,6 +107,7 @@ input {
     transition: 0.2s;
     text-indent: 6px;
     align-items: center;
+    cursor: pointer;
 }
 
 input:focus {
@@ -158,4 +159,9 @@ input:focus {
 
 .margin-small-medium {
     margin-bottom: 18px;
+}
+
+.password:invalid {
+    border: solid 1.5px #bb2c21;
+    transition: 0.2s;
 }
