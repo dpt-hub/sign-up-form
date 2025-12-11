@@ -8,20 +8,39 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: "Tahoma", sans-serif
 }
 
+.font-size-medium {
+    font-size: 1.8rem;
+}
+
+.font-weight-medium {
+    font-weight: 600;
+}
+
+.italic {
+    font-style: italic;
+}
 
 #left-side {
     background-image: url(images/leaves.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
-    min-width: 35vw;
+    min-width: 32vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+#right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fafafa;
+    gap: 15px;
 }
 
 #odin {
@@ -29,12 +48,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 25px;
     font-family: Norse;
     font-size: 6.5rem;
     color: white;
     font-weight: 800;
-    margin-top: 180px ;
+    margin-top: 190px ;
+}
+
+.padding-right-side {
+    padding-left: calc(80px + 1vw);
+    padding-right: calc(22% + 1vw);
 }
 
 #left-side p, #left-side a {
@@ -46,6 +70,92 @@
     width: 100px;
 }
 
+#last_p {
+    padding-bottom: 40px;
+    margin-top: 5px;
+}
+
+#fill-details {
+    background-color: white;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 290px;
+    padding: 20px calc(20% + 1vw) 20px calc(80px + 2vw);
+    padding-left: calc(80px + 1vw);
+    margin-top: 30px;
+    color: #2f363f;
+}
+
+#user-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px
+}
+
+#user-details > div {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 2px;
+    margin-right: 20px;
+}
+
+input {
+    border: solid 0.5px #dddddd;
+    border-radius: 5px;
+    width: calc(200px + 6vw);
+    height: 30px;
+    transition: 0.2s;
+    text-indent: 6px;
+    align-items: center;
+}
+
+input:focus {
+    border: solid 1.5px #434296;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.2s;
+}
+
+.button {
+    margin-left: calc(80px + 1vw);
+    padding: 15px 50px 15px 50px;
+    font-weight: 600;
+    background-color: #596D48;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.2s;
+}
+
+.button:hover {
+    background-color: #475739;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#log-in {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: 600;
+}
+
 .display-flex{
     display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.margin-bottom {
+    margin-bottom: 38px;
+}
+
+.margin-small {
+    margin-bottom: 10px;
+}
+
+.margin-small-medium {
+    margin-bottom: 18px;
 }
