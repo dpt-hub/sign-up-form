@@ -7,4 +7,45 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+#left-side {
+    background-image: url(images/leaves.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    min-width: 35vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#odin {
+    background-color: rgb(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: Norse;
+    font-size: 6.5rem;
+    color: white;
+    font-weight: 800;
+    margin-top: 180px ;
+}
+
+#left-side p, #left-side a {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.logo-formatted {
+    width: 100px;
+}
+
+.display-flex{
+    display: flex;
 }
